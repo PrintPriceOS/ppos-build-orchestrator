@@ -1,0 +1,15 @@
+{
+    "name": "@ppos/build-orchestrator",
+    "version": "1.0.0",
+    "description": "CI/CD & Deployment Orchestration for PrintPrice OS",
+    "private": true,
+    "scripts": {
+        "validate": "github-actions-validate",
+        "deploy:staging": "node scripts/deploy.js --env=staging",
+        "deploy:prod": "node scripts/deploy.js --env=prod"
+    },
+    "dependencies": {
+        "dotenv": "^16.3.1",
+        "axios": "^1.6.0"
+    }
+}
